@@ -1,0 +1,30 @@
+{
+  "name": "simple-node-program-template",
+  "version": "1.0.0",
+  "description": "starter for developing nodejs programs",
+  "main": "index.js",
+  "scripts": {
+    "test": "none",
+    "start": "node lib/index.js",
+    "build": "./node_modules/.bin/babel src -d lib",
+    "lint": "eslint src",
+    "dev-pipe": "npm run lint && npm run build",
+    "watch-dev": "./node_modules/.bin/watch 'npm run dev-pipe' src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhanZou/simple-node-program-template.git"
+  },
+  "keywords": [
+    "nodejs",
+    "template",
+    "lint",
+    "babel"
+  ],
+  "author": "MuhanZou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuhanZou/simple-node-program-template/issues"
+  },
+  "homepage": "https://github.com/MuhanZou/simple-node-program-template#readme"
+}
